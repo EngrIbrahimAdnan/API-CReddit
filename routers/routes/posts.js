@@ -14,7 +14,7 @@ postsRouter.get("/", getPosts);
 postsRouter.get("/:id", getPostById);
 postsRouter.post("/", addPost);
 postsRouter.delete("/:id", deletePostById);
-postsRouter.post("/comments/:id", addComment);
+postsRouter.post("/:id/comments", addComment);
 postsRouter.delete("/comments/:id", deleteCommentById);
 
 module.exports = postsRouter;
