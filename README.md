@@ -1,5 +1,16 @@
 ## API Documentation
 
+### Contents
+
+- [Get All Posts or Filter Posts by Title](#get-all-posts-or-filter-posts-by-title)
+- [Get a Single Post by ID](#get-a-single-post-by-id)
+- [Add a New Post](#add-a-new-post)
+- [Delete a Post by ID](#delete-a-post-by-id)
+- [Add a Comment to a Post by Post ID](#add-a-comment-to-a-post-by-post-id)
+- [Delete a Comment by Comment ID](#delete-a-comment-by-comment-id)
+- [Post Object Structure](#post-object-structure)
+- [Comment Structure](#comment-structure)
+
 ### Get All Posts or Filter Posts by Title
 
 [View Post Object Structure](#post-object-structure)
@@ -93,9 +104,9 @@ The request body must contain the following properties with appropriate types:
 
 ## Delete a Comment by Comment ID
 
-| ENDPOINT      | Method   | Params | URL Params | Success Response                                                                          | Error Response                                                               |
-| ------------- | -------- | ------ | ---------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
-| /comments/:id | `DELETE` | `id`   | -          | **Code:** 200 OK <br/>**Content:** `{ message: "Comment has been deleted successfully" }` | **Code:** 404 Not Found <br/>**Content:** `{ message: "Comment not found" }` |
+| ENDPOINT            | Method   | Params | URL Params | Success Response                                                                          | Error Response                                                               |
+| ------------------- | -------- | ------ | ---------- | ----------------------------------------------------------------------------------------- | ---------------------------------------------------------------------------- |
+| /posts/comments/:id | `DELETE` | `id`   | -          | **Code:** 200 OK <br/>**Content:** `{ message: "Comment has been deleted successfully" }` | **Code:** 404 Not Found <br/>**Content:** `{ message: "Comment not found" }` |
 
 ### Notes:
 
